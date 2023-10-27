@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/home_style.css">
+    <script src="https://kit.fontawesome.com/6f0f83005a.js" crossorigin="anonymous"></script>
+    <title>Sharmao Mat - Video conferencing app for everyone</title>
+</head>
+<body>
+    <div id="header" style="margin: 1%;">
+     <!-- <img src="./hero.png" alt=""> -->
+        <strong style="font-size: 30px; color: rgb(14, 109, 233);">Sharmao Mat -  A video call app for introvert</strong>
+    </div>
+    <div id="root-div">
+        <div id="left-div">
+            <div id="large-message">
+                Premium video meetings.<br/> 
+                Now for everyone.
+            </div>
+
+            <div id="small-message">
+                We re-engineered the service we built for secure businesses<br/>
+                meetings, online classes, to make it free and available for all.
+            </div>
+
+            <div id="new-meeting-root">
+                <div id="start-meeting">
+                    <a href="/room">&emsp;<i class="fas fa-plus"></i>&nbsp;
+                    New Meeting</a>
+                </div>
+
+                <div id="enter-meeting-link">
+                    <i class="fas fa-keyboard"></i>
+                    <input type="text" name="link" placeholder="Enter meeting link" id="meeting-link-text-box">
+                </div>
+                <div id="join-button">Join</div>
+            </div>
+        </div>
+
+        <div id="right-div">
+            <!-- <img src="https://storage.googleapis.com/infiflexnew.appspot.com/5758006524379136"> -->
+            <img src="https://imgs.search.brave.com/6ImjU0gtxhfCwt5_Wc9r11rCgHT3hG5lCYQgtGznzUE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pMS53/cC5jb20vY2RuLWlj/b25zLXBuZy5mbGF0/aWNvbi5jb20vNTEy/LzM4NDUvMzg0NTgw/OC5wbmc">
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<script>
+    document.getElementById('join-button').addEventListener('click', function() {
+        let input = document.getElementById('meeting-link-text-box').value;
+        window.location.assign(input);
+        document.getElementById('meeting-link-text-box').value = "";
+    });
+</script>
